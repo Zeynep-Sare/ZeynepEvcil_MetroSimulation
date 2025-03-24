@@ -1,7 +1,7 @@
 # ZeynepEvcil_MetroSimulation
 1. Proje Başlığı ve Kısa Açıklama
 Proje Sürücüsüz Metro Simülasyonudur ve bu projede, bir metro ağında iki istasyon arasındaki en hızlı ve en az aktarmalı rotayı bulabilen bir simülasyon geliştirdim ve iki farklı yol bulma algoritması (BFS ve A*) kullanarak bir metro sistemini modelledim.
-2.Kullanılan Teknolojiler ve Kütüphaneler
+2. Kullanılan Teknolojiler ve Kütüphaneler
 #import collections Bu modül, Python’un standart kütüphanesinde yer alan koleksiyon veri yapılarıyla çalışmamızı sağlar. Örneğin, veri yapılarının düzenli ve hızlı bir şekilde yönetilmesi için çeşitli yardımcı sınıflar içerir.
 from collections import defaultdict, deque
 defaultdict:
@@ -21,7 +21,7 @@ A* algoritması, başlangıç noktasından hedefe giderken, her adımda toplam m
 Neden bu algoritmaları kullandığımız:
 BFS algoritması ile yayılım öncelikli arama yaparız ve ideal çözüme ulaşırız
 A* algoritması ile hem en kısa yolu bulmak isterken hem maliyeti de hesaplarız
-Örnek Kullanım ve Test Sonuçları:
+4. Örnek Kullanım ve Test Sonuçları:
 Projeyi test etmek amacıyla üç temel senaryo üzerinden denemeler yaptım:
 AŞTİ'den OSB'ye Rota:
 BFS Algoritması: AŞTİ'den başlayarak en az aktarmalı (düğüm sayısı olarak) rota belirlendi.
@@ -31,5 +31,5 @@ Her iki algoritma da test edildi ve sonuçların tutarlı olduğu görüldü.
 Keçiören'den AŞTİ'ye Rota:
 Sistem, farklı rota seçeneklerini ve geçişleri doğru şekilde hesaplayarak hem en az aktarmalı hem de en hızlı rotayı sundu.
 Testler sırasında, terminal çıktılarından algoritmaların adım adım nasıl çalıştığını da gözlemleyebildim.
-Projeyi Geliştirme Fikirleri:
+5. Projeyi Geliştirme Fikirleri:
 Projenin temel hali böyle oldu ama üzerinde durup revize etmek daha fonksiyonel hale getirmek istiyorum buna görselleştirme eklemek alanı genişletmek kodlarımı düzeltmek ve çok işlevli hale getirmek istiyorum.
